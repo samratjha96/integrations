@@ -10,7 +10,7 @@
         if (taskId) {
           var newTask = document.createElement('appian-task');
           newTask.setAttribute("taskId", taskId);
-          newTask.addEventListener("reset", handleSubmit, false);
+          newTask.addEventListener("submit", handleSubmit, false);
           document.body.insertBefore(newTask, document.getElementById('insertPoint'));
         }
       }
