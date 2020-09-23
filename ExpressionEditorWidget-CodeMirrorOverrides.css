@@ -1,0 +1,92 @@
+/* THIS FILE IS A MANUALLY-EDITED COPY OF appian-libraries/sail-client/src/components/ExpressionEditorWidget/ExpressionEditorWidget-CodeMirrorOverrides.less
+ *
+ * Future enhancements to the mainstream `ExpressionEditorWidget-CodeMirrorOverrides.less` file should
+ * also be made to this copy of it, whenever that is possible.
+ */
+
+.CodeMirror {
+  width: 100%;
+  height: 140px;
+}
+
+.CodeMirror * {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.CodeMirror-code {
+  /* Force LTR */
+  text-align: left;
+}
+
+.CodeMirror-code > div {
+  height: 17px;
+}
+
+.CodeMirror pre {
+  line-height: 17px;
+}
+
+.CodeMirror-cursor {
+  height: 17px;
+}
+
+.CodeMirror-gutters {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.CodeMirror-lines {
+  padding: 0;
+}
+
+.CodeMirror-activeline-background {
+  background: #edf3f7;
+}
+
+.cm-s-default .cm-function {color: #005BD0;}
+.cm-s-default .cm-queryEntity {color: #005BD0;}
+.cm-s-default .cm-comment {color: #50B900;}
+.cm-s-default .cm-keyword {color: #999999;}
+.cm-s-default .cm-literal {color: #005BD0;}
+.cm-s-default .cm-ruleOrCons {color: #FF812B;}
+.cm-s-default .cm-separator {color: #3f3f3f;}
+.cm-s-default .cm-singleQuotes {color: #9269C9;}
+.cm-s-default .cm-string {color: #9269C9;}
+.cm-s-default .cm-variable {color: #24B0ED;}
+.cm-s-default .cm-autosuggestRecordProperty {color: #FF812B;} //for now just orange like ruleOrCons
+.cm-s-default .cm-autosuggestRecordAction {color: #FF812B;}
+.cm-s-default .cm-recordAction {color: #FF812B;}
+.cm-s-default .cm-recordType {color: #FF812B;}
+
+.cm-s-default .cm-type,
+.cm-s-default .cm-ctrlClickType {
+  color: #9269C9;
+}
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: #62E300; font-weight: 700;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #FA5B6A; font-weight: 700;}
+
+
+.cm-s-control .cm-ruleOrCons,
+.cm-s-control .cm-queryEntity,
+.cm-s-control .cm-recordType,
+.cm-s-control .cm-ctrlClickType {
+  border-bottom: 1px dotted black;
+}
+
+.cm-s-control .cm-ruleOrCons:hover,
+.cm-s-control .cm-queryEntity:hover,
+.cm-s-control .cm-recordType:hover,
+.cm-s-control .cm-ctrlClickType:hover  {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+pre.CodeMirror-placeholder {
+  font-family: @typeface;
+  color: @placeholder-text-color;
+  font-style: italic;
+  font-weight: 300;
+}
