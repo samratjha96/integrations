@@ -85,8 +85,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #FA5B6A; font-weight: 
 }
 
 pre.CodeMirror-placeholder {
-  font-family: @typeface;
-  color: @placeholder-text-color;
+  font-family: "Appian Open Sans";
+  color: #767676;
   font-style: italic;
   font-weight: 300;
 }
